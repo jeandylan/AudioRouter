@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="audio_output">
+    <item>Default</item>
+    <item>Earpiece</item>
+    <item>Speaker</item>
+    <item>3.5 mm jack wire (headphone/headset)</item>
+    <item>Usb device</item>
+  </string-array>
+</resources>

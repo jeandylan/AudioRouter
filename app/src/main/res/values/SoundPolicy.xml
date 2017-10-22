@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="audio_sound_policy">
+        <item>Default</item>
+        <item>Speaker</item>
+        <item>Headphone</item>
+        <item>Wired Accessory</item>
+        <item>System Enforced</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="in_call_hardware">
+        <item>Default</item>
+        <item>Earpiece</item>
+        <item>Speaker</item>
+        <item>Wired Headphone</item>
+        </string-array>
+</resources>
