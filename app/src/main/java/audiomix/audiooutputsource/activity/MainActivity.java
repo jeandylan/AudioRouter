@@ -16,8 +16,8 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.NativeExpressAdView;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
     private final int spinnerDefaultPosHardware =2;
     private final int spinnerDefaultPosSoundPolicy =0;
     private final int spinnerDefaultPosInCall=0;
+    private final String ADS_ID="ca-app-pub-5027603773616984/4380439547";
+    private AdView adView;
     @BindView(R.id.coordinatorLayout) CoordinatorLayout coordinatorLayout;
     //Audio hardware States
     String[] audioHardwareStates;
@@ -229,8 +231,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initAds(){
-       MobileAds.initialize(this, "ca-app-pub-5027603773616984~3255539062"); //init ads
-        NativeExpressAdView adView = (NativeExpressAdView)findViewById(R.id.adView);
+       MobileAds.initialize(this, ADS_ID); //init ads
+        adView = (AdView)findViewById(R.id.adView);
         AdRequest request = new AdRequest.Builder()
                 .build();
         adView.loadAd(request);
